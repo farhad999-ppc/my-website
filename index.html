@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Apple Style Links Dashboard</title>  
+    <title>Pro Software UI Dashboard</title>  
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap">
@@ -20,75 +20,122 @@
             background: linear-gradient(135deg, #f0f2f5, #d1d8e0); 
             font-family: 'SF Pro Display', sans-serif;
             margin: 0;
+            padding: 20px;
         } 
         .container { 
-            text-align: center; 
             width: 90%; 
-            max-width: 600px;
-            padding: 20px;
+            max-width: 800px;
+            padding: 30px;
             background-color: #ffffff; 
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
-            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+            border-radius: 18px;
         } 
         h1 { 
             color: #1c1c1e; 
-            margin-bottom: 30px;
-            font-size: 26px;
+            margin-bottom: 25px;
+            font-size: 28px;
             font-weight: 600;
+            text-align: center;
         } 
+        h2 { 
+            color: #007aff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007aff;
+            padding-bottom: 5px;
+            text-align: left;
+        }
         .button { 
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 240px;
+            width: 220px;
             padding: 12px;
-            margin: 12px auto;
+            margin: 8px;
             background-color: #007aff; 
             color: white; 
             text-decoration: none;
-            border-radius: 30px;
+            border-radius: 16px;
             font-size: 16px;
             font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0, 122, 255, 0.2);
-            transition: all 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 122, 255, 0.3);
+            transition: all 0.3s ease;
             text-align: center;
+            border: 1px solid rgba(0, 122, 255, 0.6);
         }
         .button i {
-            margin-right: 10px;
+            margin-right: 8px;
+            font-size: 18px;
         }
         .button:hover {
             background-color: #005bb5;
-            box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
+            box-shadow: 0 8px 16px rgba(0, 122, 255, 0.4);
             transform: translateY(-2px);
         }
         .button:active {
-            transform: translateY(0px);
-            box-shadow: 0 4px 10px rgba(0, 122, 255, 0.15);
+            transform: translateY(1px);
+            box-shadow: 0 3px 6px rgba(0, 122, 255, 0.2);
         }
         .button-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .category {
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Apple Style Links Dashboard</h1>
-        <div class="button-container">
-            <!-- Social Media Links -->
-            <a href="https://www.facebook.com" class="button" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="https://www.twitter.com" class="button" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-            <a href="https://www.instagram.com" class="button" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.linkedin.com" class="button" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://www.youtube.com" class="button" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-            
-            <!-- Additional Useful Links -->
-            <a href="https://www.google.com" class="button" target="_blank"><i class="fas fa-search"></i> Google</a>
-            <a href="https://www.gmail.com" class="button" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
-            <a href="https://www.wikipedia.org" class="button" target="_blank"><i class="fas fa-globe"></i> Wikipedia</a>
-            <a href="https://www.github.com" class="button" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.stackoverflow.com" class="button" target="_blank"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
+        <h1>Pro Software UI Dashboard</h1>
+
+        <!-- Social Media Links Section -->
+        <div class="category">
+            <h2>Social Media</h2>
+            <div class="button-container">
+                <a href="https://www.facebook.com" class="button" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.twitter.com" class="button" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com" class="button" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com" class="button" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.youtube.com" class="button" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+
+        <!-- Productivity Links Section -->
+        <div class="category">
+            <h2>Productivity</h2>
+            <div class="button-container">
+                <a href="https://www.google.com" class="button" target="_blank"><i class="fas fa-search"></i> Google</a>
+                <a href="https://www.gmail.com" class="button" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
+                <a href="https://www.wikipedia.org" class="button" target="_blank"><i class="fas fa-globe"></i> Wikipedia</a>
+                <a href="https://www.dropbox.com" class="button" target="_blank"><i class="fab fa-dropbox"></i> Dropbox</a>
+                <a href="https://www.spotify.com" class="button" target="_blank"><i class="fab fa-spotify"></i> Spotify</a>
+            </div>
+        </div>
+
+        <!-- Development Links Section -->
+        <div class="category">
+            <h2>Development</h2>
+            <div class="button-container">
+                <a href="https://www.github.com" class="button" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.stackoverflow.com" class="button" target="_blank"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
+                <a href="https://codepen.io" class="button" target="_blank"><i class="fab fa-codepen"></i> CodePen</a>
+            </div>
+        </div>
+
+        <!-- Shopping Links Section -->
+        <div class="category">
+            <h2>Shopping & Entertainment</h2>
+            <div class="button-container">
+                <a href="https://www.amazon.com" class="button" target="_blank"><i class="fab fa-amazon"></i> Amazon</a>
+                <a href="https://www.netflix.com" class="button" target="_blank"><i class="fab fa-netflix"></i> Netflix</a>
+                <a href="https://www.apple.com" class="button" target="_blank"><i class="fab fa-apple"></i> Apple</a>
+                <a href="https://www.microsoft.com" class="button" target="_blank"><i class="fab fa-windows"></i> Microsoft</a>
+            </div>
         </div>
     </div>
 </body>
