@@ -3,10 +3,10 @@
 <head> 
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Social Media & Useful Links Dashboard</title>  
+    <title>Apple Style Links Dashboard</title>  
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap">
 
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,56 +17,64 @@
             align-items: center; 
             justify-content: center; 
             height: 100vh; 
-            background: linear-gradient(135deg, #e0f7fa, #00796b); 
-            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f2f5, #d1d8e0); 
+            font-family: 'SF Pro Display', sans-serif;
             margin: 0;
         } 
         .container { 
             text-align: center; 
-            width: 80%; 
-            max-width: 800px;
+            width: 90%; 
+            max-width: 600px;
             padding: 20px;
             background-color: #ffffff; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+            border-radius: 20px;
         } 
         h1 { 
-            color: #00796b; 
-            margin-bottom: 20px;
-            font-size: 28px;
+            color: #1c1c1e; 
+            margin-bottom: 30px;
+            font-size: 26px;
+            font-weight: 600;
         } 
         .button { 
-            display: inline-block; 
-            width: 200px; 
-            padding: 15px; 
-            margin: 10px; 
-            text-align: center; 
-            background-color: #00796b; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 240px;
+            padding: 12px;
+            margin: 12px auto;
+            background-color: #007aff; 
             color: white; 
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 30px;
             font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 122, 255, 0.2);
+            transition: all 0.2s ease;
+            text-align: center;
         }
         .button i {
-            margin-right: 8px;
+            margin-right: 10px;
         }
         .button:hover {
-            background-color: #004d40;
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background-color: #005bb5;
+            box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .button:active {
+            transform: translateY(0px);
+            box-shadow: 0 4px 10px rgba(0, 122, 255, 0.15);
         }
         .button-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Social Media & Useful Links Dashboard</h1>
+        <h1>Apple Style Links Dashboard</h1>
         <div class="button-container">
             <!-- Social Media Links -->
             <a href="https://www.facebook.com" class="button" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
@@ -81,11 +89,6 @@
             <a href="https://www.wikipedia.org" class="button" target="_blank"><i class="fas fa-globe"></i> Wikipedia</a>
             <a href="https://www.github.com" class="button" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://www.stackoverflow.com" class="button" target="_blank"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
-            <a href="https://www.reddit.com" class="button" target="_blank"><i class="fab fa-reddit"></i> Reddit</a>
-            <a href="https://www.amazon.com" class="button" target="_blank"><i class="fab fa-amazon"></i> Amazon</a>
-            <a href="https://www.netflix.com" class="button" target="_blank"><i class="fas fa-film"></i> Netflix</a>
-            <a href="https://www.dropbox.com" class="button" target="_blank"><i class="fab fa-dropbox"></i> Dropbox</a>
-            <a href="https://www.spotify.com" class="button" target="_blank"><i class="fab fa-spotify"></i> Spotify</a>
         </div>
     </div>
 </body>
