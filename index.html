@@ -4,13 +4,13 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>ZXone Web Dashboard</title> 
-
+ 
     <!-- Google Fonts --> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap"> 
-
+ 
     <!-- Font Awesome for Icons --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-
+ 
     <style> 
         body { 
             display: flex; 
@@ -61,6 +61,7 @@
             font-size: 28px; 
             font-weight: 600; 
             text-align: center; 
+            display: block; 
         } 
         h2 { 
             color: #007aff; 
@@ -112,11 +113,23 @@
             margin-top: 20px; 
             text-align: center; 
         } 
-        .profile-img {
-            margin-top: 20px; /* Adjust margin as needed */
-            width: 100%; /* Responsive width */
-            border-radius: 10px; /* Optional: rounded corners */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow for the image */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            margin-bottom: 25px;
+            position: relative; 
+        }
+        .header-container img {
+            max-width: 80px; 
+            height: auto; 
+            border-radius: 10px; 
+            margin-right: 20px; 
+            position: relative; 
+        }
+        .header-title {
+            text-align: center; 
+            width: 100%; 
         }
     </style> 
 </head> 
@@ -128,12 +141,14 @@
         <a href="#" class="menu-item"><i class="fas fa-code"></i> Developers</a> 
         <a href="#" class="menu-item"><i class="fas fa-cog"></i> Settings</a> 
         <a href="#" class="menu-item"><i class="fas fa-question-circle"></i> Help</a> 
-
-        <!-- Image below the menu -->
-        <img src="D:/Zubayer/ZUBAYER PERSONAL/P.P/44.png" alt="Profile" class="profile-img"> 
     </div> 
     <div class="container"> 
-        <h1>Zubayer Web Dashboard</h1> 
+
+        <!-- Header Section with Logo and Title -->
+        <div class="header-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg" alt="Logo"> <!-- Sample Logo -->
+            <h1 class="header-title">Zubayer Web Dashboard</h1>
+        </div>
 
         <!-- Social Media Links Section --> 
         <div class="category"> 
@@ -146,7 +161,7 @@
                 <a href="https://www.youtube.com" class="button" target="_blank"><i class="fab fa-youtube"></i> YouTube</a> 
             </div> 
         </div> 
-
+ 
         <!-- Productivity Links Section --> 
         <div class="category"> 
             <h2>Productivity</h2> 
@@ -156,21 +171,34 @@
                 <a href="https://www.wikipedia.org" class="button" target="_blank"><i class="fas fa-globe"></i> Wikipedia</a> 
                 <a href="https://www.dropbox.com" class="button" target="_blank"><i class="fab fa-dropbox"></i> Dropbox</a> 
                 <a href="https://www.spotify.com" class="button" target="_blank"><i class="fab fa-spotify"></i> Spotify</a> 
+                <a href="https://chat.openai.com" class="button" target="_blank"><i class="fab fa-chatgpt"></i> ChatGPT</a> 
+                <a href="https://www.microsoft.com/en-us/microsoft-365/copilot" class="button" target="_blank"><i class="fab fa-microsoft"></i> Microsoft Copilot</a> 
             </div> 
         </div> 
-
+ 
         <!-- Development Links Section --> 
         <div class="category"> 
             <h2>Development</h2> 
             <div class="button-container"> 
                 <a href="https://www.github.com" class="button" target="_blank"><i class="fab fa-github"></i> GitHub</a> 
-                <a href="https://www.stackoverflow.com" class="button" target="_blank"><i class="fab fa-stack-overflow"></i> Stack Overflow</a> 
-                <a href="https://codepen.io" class="button" target="_blank"><i class="fab fa-codepen"></i> CodePen</a> 
+                <a href="https://www.gitlab.com" class="button" target="_blank"><i class="fab fa-gitlab"></i> GitLab</a> 
+                <a href="https://www.heroku.com" class="button" target="_blank"><i class="fab fa-heroku"></i> Heroku</a> 
+                <a href="https://www.repl.it" class="button" target="_blank"><i class="fab fa-reply"></i> Replit</a> 
             </div> 
         </div> 
-
-        <!-- Shopping Links Section --> 
+ 
+        <!-- Shopping & Entertainment Links Section --> 
         <div class="category"> 
-            <h2>Shopping & Entertainment</h2>
-            <div class="button-container">
-                <a href="https://www.amazon.com" class="button" target="_blank"><i class="fab fa-amazon
+            <h2>Shopping & Entertainment</h2> 
+            <div class="button-container"> 
+                <a href="https://www.amazon.com" class="button" target="_blank"><i class="fab fa-amazon"></i> Amazon</a> 
+                <a href="https://www.ebay.com" class="button" target="_blank"><i class="fab fa-ebay"></i> eBay</a> 
+                <a href="https://www.walmart.com" class="button" target="_blank"><i class="fab fa-walmart"></i> Walmart</a> 
+                <a href="https://www.netflix.com" class="button" target="_blank"><i class="fab fa-netflix"></i> Netflix</a> 
+                <a href="https://www.spotify.com" class="button" target="_blank"><i class="fab fa-spotify"></i> Spotify</a> 
+                <a href="https://www.apple.com/app-store/" class="button" target="_blank"><i class="fab fa-apple"></i> Apple Store</a> 
+            </div> 
+        </div> 
+    </div> 
+</body> 
+</html>
